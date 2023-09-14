@@ -1,0 +1,43 @@
+
+@media only screen and (max-width: 425px) {
+
+    .header {
+        font-size: 1.5em;
+    
+        &__h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .main {
+        &__section {
+
+            &--team-builder {
+                margin-bottom: 1.5rem;
+            }    
+            
+            &-container {
+                margin: 1.6rem 1.75rem 1.75rem;
+            }
+
+            &-ftr {
+
+            &-img {
+                width : 3.5rem;
+                height: 3.5rem;
+            }
+        }
+    }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main {
+
+        &-flex {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+    }
+}

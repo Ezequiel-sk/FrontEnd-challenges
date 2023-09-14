@@ -1,0 +1,177 @@
+@import "partials/_browser-reset.scss";
+@import "partials/_variables.scss";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $Family;
+    color: $Pale-Blue;
+    font-weight: $Regular;
+    background-color: $Very-Dark-Blue;
+}
+
+.main {
+    display: flex;
+    gap: 1.9rem;
+    
+    article, 
+    section {
+        background-color: $Dark-Blue;
+        box-shadow: shadow;
+    }
+
+    p {
+        font-weight: $Bold;
+        text-transform: uppercase;
+    }
+
+    &__article {
+        border-radius: .6rem;
+        border-top-right-radius: 6.2rem;
+
+        &-container {
+            margin: 2.5rem;
+            margin-right: 8rem;
+        }
+
+        &-logo {
+            margin-bottom: 2rem;
+        }
+
+        &-icon {
+            gap: 1rem;
+            display: flex;
+            align-items: center;
+
+            &-border {
+                width: 3rem;
+                height: 3rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                border-radius: .6rem;
+                background-color: $Very-Dark-Blue;
+
+                svg {
+                    width: 1.5rem;
+                }
+
+                &:first-child svg {
+                    width: 1.2rem;
+                }
+            }
+        }
+    }
+
+    &__alert {
+        z-index: 1; 
+        top: 35%;
+        left: 74.5%;
+        position: fixed;
+        border-radius: .6rem;
+        transform: translateX(-50%);
+        border-bottom-right-radius: 0;
+        background-color: $White;
+
+        &-container {
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin: .75rem 1.5rem;
+        }
+        
+        &-h2 {
+            font-weight: $Bold;
+            font-size: 2.52rem;
+            color: $Very-Dark-Blue;
+        }
+
+        &-p {
+            font-size: .8rem;
+            letter-spacing: .04688rem;
+            margin-left: .56rem;
+            color: $Grayish-Blue;
+        }
+
+        &::after {
+            content: "";
+            top: 100%;
+            right: 0;
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-style: solid;
+            transform: translateX(0);
+            border-width: 0 1.375rem 1.375rem 0;
+            border-color: transparent $White transparent transparent;
+        }
+            
+    }
+  
+    &__section {
+        max-height: 9.6875rem;
+        margin-top: 2.8125rem;
+        border-radius: .6rem;
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+            margin: 2.5rem;
+        }
+
+        &-h2 {
+            font-size: .9rem;
+            letter-spacing: .01763rem;
+
+            &-p {
+                opacity: 1;
+                display: inline;
+            }
+        }
+
+        &-bar {
+            width: 28.6rem;
+            height: 1rem;
+            margin: 1rem 0 .5rem;
+            position: relative;
+            border-radius: 1rem;
+            border: 2px solid $Vy-Dk-Be-o;
+            background-color: $Vy-Dk-Be-o;
+            
+
+            &-layer {
+                width: 73.8%;
+                height: 100%;
+                position: absolute;
+                border-radius: 1rem;
+                background: $Gradient;
+          
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width:  .5rem;
+                    height: .5rem;
+                    border-radius: 50%;
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-20%, -50%);
+                    background-color: $White;
+                }
+            }
+        }
+
+        &-gb {
+            display: flex;
+            justify-content: space-between;
+
+            &-p {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@import "partials/_media-query.scss";
