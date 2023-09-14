@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Frontend Mentor | Product preview card component</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="asset/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="asset/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="asset/favicon/favicon-16x16.png">
+        <link rel="manifest" href="asset/favicon/site.webmanifest">
+        <link rel="mask-icon" href="asset/favicon/safari-pinned-tab.svg" color="#ffffff">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="container">
+            <picture class="picture">
+                <source srcset="asset/img/image-product-desktop.jpg" media="(min-width: 768px)">
+                <source srcset="asset/img/image-product-mobile.jpg" media="(max-width: 600px)">
+                <img src="asset/img/image-product-desktop.jpg" alt="Gabrielle Chanel perfume bottle surrounded by leaves, with silver lid and brand name label">
+            </picture>
+            <main class="main">
+                <div class="main-container">
+                    <header class="main__header">
+                        <span class="main__header-span">Perfume</span>
+                        <h1 class="main__header-h1">Gabrielle Essence Eau De Parfum</h1>
+                        <p class="main__header-p">
+                            A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                            Perfumer-Creator for the House of <span>chanel</span>.
+                        </p>
+                    </header>
+                    <footer class="main__footer">
+                        <div class="main__footer-div">
+                            <h2 class="main__footer-div-h2">$149.99</h2>
+                            <del class="main__footer-div-del">$169.99</del>
+                        </div>
+                        <button class="main__footer-button">
+                            <svg class="main__footer-button-svg" width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>
+                            Add to Cart
+                        </button>
+                    </footer>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

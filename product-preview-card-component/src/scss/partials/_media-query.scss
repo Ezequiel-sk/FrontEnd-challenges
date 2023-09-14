@@ -1,0 +1,63 @@
+@media only screen and (max-width: 425px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 20.625rem;
+    }  
+
+    .main {  
+        max-width: 20.625rem;
+
+        &-container {
+            margin: 1.4rem 1.38rem 1.38rem 1.44rem;
+        }
+
+        &__header {
+            &-span {
+                font-size: .75rem;
+                letter-spacing: .28875rem;
+                margin: 0;
+            }
+
+            &-h1 {
+                margin: .56rem 0 .81rem;
+                max-width: 15rem;
+                letter-spacing: -0.00938rem;
+            }
+
+            &-p {
+                font-size: 0.8rem;
+                margin: 0;
+                max-width: 16rem;
+            }
+        }
+
+        &__footer {        
+            &-div {
+                margin: 0.4rem 0 .94rem;
+
+                &-h2 {
+                    letter-spacing: -0.00938rem;
+                }
+
+                &-p {
+                    font-size: 0.875rem;
+                    letter-spacing: -0.035rem;
+                }
+            }
+
+            &-button {
+                font-size: 0.875rem;
+                letter-spacing: -0.02625rem;
+
+                padding: .87rem 5.5rem 1rem;
+                margin: 0;
+
+                &-svg {
+                    margin-right: .62rem;
+                }
+            }
+        }
+    }
+}
