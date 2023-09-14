@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import "partials/var";
+@import "partials/reset";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: $Very-light-gray;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    border-radius: .625rem;
+    max-width: 57.5625rem;
+}
+
+.main {
+    &__section {
+
+        &-container {
+            margin: 3rem 4.25rem 3rem 2.9375rem;
+        }
+
+        &-header {
+            &-svg {
+                width : 4rem;
+                height: 2.5rem;
+            }
+
+            &-h1 {
+                font-size: 2.5rem;
+                font-weight: 700;
+                font-family: Big Shoulders Display;
+                color: $Very-light-gray;
+                margin: 2.1875rem 0 1.75rem;
+            }
+
+            &-p {
+                color: $Transparent-white;
+                max-width: 12.5rem;
+            }
+        }
+        
+        &-footer {
+            text-align: center;
+
+            &-bts {
+                background-color: $Very-light-gray;
+                padding: 0.875rem 2.0625rem 0.9375rem;
+                border-radius: 1.5rem;
+                max-width: 10rem;
+                margin-top: 5.375rem;
+                border: 3px solid $Very-light-gray;
+
+                &--sedans {
+                    color: $Bright-orange;
+
+                    &:active {
+                        color: $Dark-cyan;
+                    } 
+                }
+                
+                &--suvs {
+                    color: $Dark-cyan;
+
+                    &:active {
+                        color: $Very-dark-cyan;
+                    } 
+                }
+
+                &--luxury {
+                    color: $Very-dark-cyan;                   
+
+                    &:active {
+                        color: $Bright-orange;
+                    } 
+                }
+
+                &:hover {
+                    background-color: transparent;
+                    color: $Very-light-gray;
+                    cursor: pointer;
+                }
+    
+                &:active {
+                    background-color: $Very-light-gray;
+                    cursor: pointer;
+                } 
+            }
+        }
+
+        &--sedans {
+            background-color: $Bright-orange;
+        }
+
+        
+        &--suvs {
+            background-color: $Dark-cyan;
+        }
+
+        &--luxury {
+            background-color: $Very-dark-cyan;
+        }
+    }
+}
+
+@import "partials/media-querry";

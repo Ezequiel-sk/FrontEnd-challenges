@@ -1,0 +1,13 @@
+@media only screen and (max-width: 425px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 5.5rem 0;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .main__section-footer-bts{
+        padding: 0.875rem 1.6rem 0.9375rem;
+    }
+}
