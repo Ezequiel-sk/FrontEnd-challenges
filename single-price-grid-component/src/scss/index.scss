@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import "partials/browser-reset.scss";
+@import "partials/variables.scss";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    background-color: $Light-Gray;
+}
+
+.container {
+    overflow: hidden;
+    border-radius: .4rem;
+    max-width: 39rem;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.3);
+}
+
+.main {
+    display: grid;
+    grid-template-areas: 
+    "grid-1 grid-1"
+    "grid-2 grid-3";
+
+    &__section {
+        &-container {
+            margin: 2.5rem 4.9rem 2.6rem 2.5rem;
+        }
+    }
+    
+
+    &__gdo {
+        grid-area: grid-1;
+        background-color: $White;
+
+        &-h1 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: $Cyan;
+        }
+
+        &-h2 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin: 1.5rem 0 .8rem;
+            color: $Bright-Yellow;
+        }
+
+        &-p {
+            font-weight: 400;
+            font-size: 1rem;
+            color: $Grayish-Blue;
+        }
+    }
+    
+    &__gdtw {
+        grid-area: grid-2;
+        color: $Light-Gray;
+        background-color: $Cyan;
+
+        &-h1 {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        &-h2 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin: 1rem 0 .44rem;
+
+            display: flex;
+            align-items: center;
+
+            &-span {
+                font-weight: 400;
+                font-size: 1rem;
+                margin-left: .7rem;
+                opacity: .7;
+            }
+        }
+        
+        &__gdtw-p {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        &-button {
+            font-weight: 700;
+            font-size: 1rem;
+            color: $Light-Gray;
+
+            width: 100%;
+            margin-top: 2rem;
+            padding: .94rem 5.5rem .87rem;
+
+            border-radius: 0.4375rem;
+            background: $Bright-Yellow ;
+        }
+    }
+
+    &__gdt {
+        grid-area: grid-3;
+        color: $Light-Gray;
+        background-color: $Turquoise;
+
+        &-h1 {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+        }
+
+        &-p {
+            font-weight: 400;
+            font-size: .8rem;
+            line-height: 1.1rem;
+            opacity: .8;
+        }
+    }
+}
+
+@import "partials/_media-query.scss";

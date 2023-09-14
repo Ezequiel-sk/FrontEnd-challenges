@@ -1,0 +1,43 @@
+@media only screen and (max-width: 425px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        max-width: 19rem;
+        margin: 1.7rem 0;
+    }
+    
+    .main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "grid-1"
+        "grid-2"
+        "grid-3";
+
+        &__section {
+            &-container {
+                margin: 1.75rem 1.5rem 2.3rem;
+            }
+        }
+
+        &__gdo {
+
+        &-h1 {
+            font-size: 1.25rem;
+            letter-spacing: -0.0125rem;
+        }
+
+        &-h2 {
+            font-size: .9rem;
+            letter-spacing: .00938rem;
+        }
+
+        &-p {
+            font-size: .9rem;
+            letter-spacing: -0.00875rem;
+        }
+    }
+    }
+}
+

@@ -1,0 +1,61 @@
+@import "partials/style-var";
+@import "partials/reset";
+
+body {
+    font-family: $Family;
+    font-style: normal;
+    background-color: $Light-gray;
+    letter-spacing: -0.021rem;
+}
+
+.wrapping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.mn {
+    max-width: 20rem;
+    border-radius: 1.125rem;
+    background-color: $White;
+
+    &__wrapping {
+        max-width: 17rem;
+        margin: 1rem 1rem 2.375rem;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 0.75rem;
+    }
+
+    &__h1 {
+        font: {
+            size: 1.4375rem;
+            weight: 700;
+            line-height: 1.8125rem;
+        }
+        color: $Dark-blue;
+        margin: 1.4375rem 0 0.875rem;
+    }
+
+    &__p {
+        font: {
+            weight: 400;
+            size: 1rem;
+            line-height: 1.25rem;
+        }
+        color: $Grayish-blue;
+    }
+}
+
+.footer { 
+    font-size: 0.6875rem; 
+    text-align: center;
+    a { 
+        color: hsl(228, 45%, 44%); 
+    } 
+}

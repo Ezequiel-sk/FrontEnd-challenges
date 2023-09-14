@@ -1,0 +1,149 @@
+@import "partials/_browser-reset.scss";
+@import "partials/_variables.scss";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $main-font;
+}
+
+.container {
+    margin: auto;
+    max-width: 84.7%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    font-weight: $Bold;
+
+    &__section {
+        max-width: 27rem;
+        margin-bottom: 4.7rem;
+        grid-column: 1 / span 1;
+
+        &-h1 {
+            font-size: 3.5rem;
+            letter-spacing: -.12rem;
+            margin-bottom: 1.5rem;
+            color: $Very-Dark-Magenta;
+        }
+
+        &-p {
+            font-size: 1.24rem;
+            font-weight: $Regular;
+            color: $Dark-Grayish-Magenta;
+        }
+    }
+
+    &__rating {
+        max-width: 29rem;
+        width: 100%;
+        grid-column: 2;
+
+
+        div:nth-child(2) {
+            margin: 1rem 0;
+            transform: translateX(3rem);
+        }
+
+        div:nth-child(3) {
+            transform: translateX(6rem);
+        }
+
+        &-div {
+            width: 100%;
+            border-radius: .5rem;
+            background-color: $Very-Dark-Magenta-opacity;
+
+            &-margin {
+                padding: 1.25rem 4rem 1.25rem 2rem;
+                display: flex;
+
+                div {
+                    display: flex;
+                }
+            }
+
+            &-svg {
+                margin-right: .5rem;
+            }
+
+            &-h2 {
+                color: $Very-Dark-Magenta;
+                margin-left: 1.6rem;
+            }   
+        }
+    }
+
+  &__cards {
+        display: flex;
+        align-items: center;
+        gap: 3.4rem;
+        grid-column: 1 / span 2; 
+        font-weight: $Regular;
+
+        div:nth-child(2) {
+            transform: translateY(1rem);
+        }
+
+        div:nth-child(3) {
+            transform: translateY(2rem);
+        }
+
+
+        &-container {
+            width: 100%;
+            height: 100%;
+            border-radius: .57rem;
+            background: $Very-Dark-Magenta ;
+        }
+
+        &-margin {
+            margin: 2rem 2rem;
+        }
+
+        &-header {
+            display: flex;
+            align-items: center; 
+            text-align: center;
+
+            &-img {
+                width: 2.5rem;
+                border-radius: 50%;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-left: 1.4rem; 
+                position: relative;
+                top: -1rem;
+            }
+
+            &-h3 {
+                font-weight: $Bold;
+                color: $White;
+                margin-bottom: .26rem;
+            }
+            
+            &-p {
+                color: $Soft-Pink;
+                opacity: .8;
+            }
+        }
+        
+        &-footer {
+            margin-top: 1.8rem;
+
+            &-q {
+                line-height: 1.3rem;
+                font-size: 1.04375rem;
+                color: $Light-Grayish-Magenta;
+            }
+        }
+    }
+}
+
+@import "partials/_media-query.scss";
