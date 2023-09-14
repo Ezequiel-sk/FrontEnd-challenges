@@ -1,0 +1,39 @@
+@media only screen and (max-width: 425px) {
+    body {
+        height: auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 3.5rem 0;
+        max-width: 21rem;
+    }
+
+    .main { 
+        &__container {
+            padding: 2.4rem 2rem .9rem;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 1.75rem;
+            letter-spacing: 0.00875rem;
+        }
+
+        &__p {
+            font-size: .94rem;
+            letter-spacing: 0.00469rem;
+        }
+
+        &__div { 
+            display: flex;
+            flex-direction: column;
+            
+            div {
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}
+
